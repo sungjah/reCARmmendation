@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height:70px;
+}
+
+nav .logo{
+    color:white;
+    margin-left:-30px;
+    font-size: 28px;
+    text-align: start;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.wrapper{
+    background-image: url("images/wrench.jpg");
+    padding-top: 20px;
+    position: absolute;
+}
+
+.displayinfo{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
+}
+.displayinfo div{
+    margin-top:40px;
+    color:#fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.displayinfo div h2{
+    color:beige;
+    margin-bottom:10px;
+}
+
+.back-image{
+    position: absolute;
+    right: 0;
+    bottom:0;
+    z-index: -1;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+  }
+
+  @media (min-aspect-ratio: 16/9){
+    .back-image{
+        width:100%;
+        height:auto;
+    }
+  }
+
+  @media (max-aspect-ratio: 16/9){
+    .back-image{
+        width:auto;
+        height:100%;
+    }
+  }
